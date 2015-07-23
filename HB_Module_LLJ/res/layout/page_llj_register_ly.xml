@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hb_rg_m_detail_root_ly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/common_color_e93030" >
+
+        <TextView
+            android:id="@+id/hb_rg_m_detail_topbar_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/common_color_e93030"
+            android:textColor="@color/common_color_ffffff"
+            android:textSize="@dimen/common_font_20" />
+
+        <RelativeLayout
+            android:id="@+id/hb_rg_launch_back_rl"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="27dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/home_nav_icon_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@color/common_color_ffffff"
+            android:textSize="19dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+       <EditText
+           android:id="@+id/llj_login_name_txt"
+           android:layout_width="match_parent"
+           android:layout_height="52dp"
+           android:layout_gravity="center_vertical"
+           android:layout_marginTop="20dp"
+           android:background="#ffffff"
+           android:hint="请输入手机号"
+           android:paddingLeft="12dp"
+           android:singleLine="true"
+           android:textColor="#434343"
+           android:textColorHint="#949494"
+           android:textSize="@dimen/common_font_15" />
+       
+       <LinearLayout android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+            android:background="#ffffff">
+       <EditText
+             android:id="@+id/llj_login_pwd_txt"
+           android:layout_width="match_parent"
+           android:layout_height="52dp"
+           android:layout_gravity="center_vertical"
+           android:layout_marginTop="1dp"
+           android:layout_weight="1"
+           android:background="@null"
+           android:hint="请输入验证码"
+           android:paddingLeft="12dp"
+           android:inputType="textPassword"
+           android:singleLine="true"
+           android:textColor="#434343"
+           android:textColorHint="#949494"
+           android:textSize="@dimen/common_font_15" />
+       
+       <Button android:id="@+id/llj_register_verification_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="38dp"
+           android:text="获取验证码"
+           android:background="@drawable/gray_c_btn_selector"
+           android:textColor="#434343"
+            android:textSize="@dimen/common_font_12" 
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:layout_marginRight="6dp"
+           />
+       
+       </LinearLayout>
+       
+       <Button android:id="@+id/ljj_login_btn"
+           android:layout_width="match_parent"
+           android:layout_height="42dp"
+           android:text="下 一  步 "
+           android:textColor="#ffffff"
+           android:background="@drawable/llj_common_btn_bg"
+           android:layout_marginRight="12dp"
+           android:layout_marginLeft="12dp"
+           android:layout_marginTop="20dp"
+           android:textSize="18dp"
+           />
+
+    </LinearLayout>
+
+</LinearLayout>

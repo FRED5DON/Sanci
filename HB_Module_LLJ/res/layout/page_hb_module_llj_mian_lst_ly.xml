@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_color_e93030"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="礼拉记"
+        android:textColor="@color/common_color_ffffff"
+        android:textSize="@dimen/common_font_18" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.hb_module_llj.view.subview.ImageCycleView
+                android:id="@+id/ad_view"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" >
+            </com.hb_module_llj.view.subview.ImageCycleView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/llj_mian_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="6dp"
+                        android:clickable="false"
+                        android:src="@drawable/datebook_home" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="6dp"
+                        android:clickable="false"
+                        android:text="记事"
+                        android:textColor="@color/common_color_434343" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#eeeeee" />
+
+                <LinearLayout
+                    android:id="@+id/llj_mian_add_gnote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="6dp"
+                        android:clickable="false"
+                        android:src="@drawable/add_home" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="6dp"
+                        android:clickable="false"
+                        android:text="添加礼记"
+                        android:textColor="@color/common_color_434343" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#eeeeee" />
+
+                <LinearLayout
+                    android:id="@+id/llj_mian_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="6dp"
+                        android:clickable="false"
+                        android:src="@drawable/check_home" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="6dp"
+                        android:clickable="false"
+                        android:text="签到"
+                        android:textColor="@color/common_color_434343" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.hb_module_llj.view.subview.ActiveSkinHLstView
+                android:id="@+id/page_hb_module_llj_h_lst_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/common_color_ffffff"
+                android:divider="@null"
+                android:dividerHeight="0dp" >
+            </com.hb_module_llj.view.subview.ActiveSkinHLstView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/common_color_ffffff"
+                android:padding="6dp"
+                android:text="推荐文章"
+                android:textColor="@color/common_color_434343"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc" />
+
+            <com.hb_module_llj.view.subview.ArtModuleLstSubView
+                android:id="@+id/page_hb_module_llj_home_lst_view"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:background="@color/common_color_ffffff"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

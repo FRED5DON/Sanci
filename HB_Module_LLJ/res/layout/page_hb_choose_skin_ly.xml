@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hb_rg_m_detail_root_ly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/common_color_e93030" >
+
+        <TextView
+            android:id="@+id/hb_rg_m_detail_topbar_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/common_color_e93030"
+            android:textColor="@color/common_color_ffffff"
+            android:textSize="@dimen/common_font_20" />
+
+        <RelativeLayout
+            android:id="@+id/hb_rg_launch_back_rl"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="27dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/home_nav_icon_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发起邀请函"
+            android:textColor="@color/common_color_ffffff"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+    <com.hb_module_llj.view.subview.CommonlHLstSubView
+        android:id="@+id/page_hb_module_llj_label_h_lst_view"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:divider="@null"
+        
+        android:background="@color/common_color_ffffff"
+        android:dividerHeight="6dp">
+    </com.hb_module_llj.view.subview.CommonlHLstSubView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <com.hb_module_llj.view.subview.CommonGridSubView
+            android:id="@+id/page_hb_rg_launch_choose_skin_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="12dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="12dp" >
+        </com.hb_module_llj.view.subview.CommonGridSubView>
+    </LinearLayout>
+
+</LinearLayout>

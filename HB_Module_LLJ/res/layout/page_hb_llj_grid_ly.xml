@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_color_ffffff"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <com.hb_module_llj.view.subview.RGChooseSkinGridView
+            android:id="@+id/page_hb_rg_launch_choose_skin_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="12dp"
+            android:numColumns="3"
+            android:verticalSpacing="12dp" >
+        </com.hb_module_llj.view.subview.RGChooseSkinGridView>
+    </LinearLayout>
+
+</LinearLayout>

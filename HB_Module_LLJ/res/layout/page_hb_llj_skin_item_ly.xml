@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="6dp" >
+
+        <RelativeLayout
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/hlst_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yqh_llj_jh_item_bg"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignBottom="@+id/hlst_img"
+                android:layout_alignLeft="@+id/hlst_img"
+                android:layout_alignRight="@+id/hlst_img"
+                android:background="#80000000"
+                android:gravity="center"
+                android:text="吴曼提克"
+                android:textColor="@color/common_color_ffffff"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="¥ 2.5"
+                 android:textSize="12dp"
+                android:textColor="@color/common_color_e93030" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="会员免费"
+                android:gravity="right"
+                android:textSize="12dp"
+                android:textColor="#434343" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

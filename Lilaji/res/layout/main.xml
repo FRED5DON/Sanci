@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+    <com.app.lilaji.view.RGBottomMenuView
+        android:id="@+id/main_menu_ly"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+    </com.app.lilaji.view.RGBottomMenuView>
+
+    <RelativeLayout
+        android:id="@+id/appContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_menu_ly" 
+        android:background="#eeeeee" >
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_bottom_menu_height"
+    android:orientation="horizontal" >
+
+    <!-- header -->
+
+    <Button
+        android:id="@+id/common_bottom_menu_dynamic_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bottommenu_dynamic" />
+
+    <Button
+        android:id="@+id/common_bottom_menu_circle_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bottommenu_circle" />
+
+    <Button
+        android:id="@+id/common_bottom_menu_launch_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bottommenu_share" />
+
+    <Button
+        android:id="@+id/common_bottom_menu_friend_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bottommenu_friends" />
+
+    <Button
+        android:id="@+id/common_bottom_menu_home_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bottommenu_me" />
+
+</LinearLayout>

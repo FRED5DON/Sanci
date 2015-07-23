@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<com.daimajia.swipe.SwipeLayout
+    android:id="@+id/swipe"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    >
+
+    <LinearLayout
+        android:tag="Bottom3"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="60dp"
+            android:text="修改"
+            android:gravity="center"
+            android:textSize="14sp"
+             android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#4DAED4"
+            android:layout_height="60dp" />
+          <TextView
+            android:id="@+id/delete"
+            android:layout_weight="1"
+            android:layout_width="60dp"
+             android:gravity="center"
+            android:text="删除"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#ff0000"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/item">
+        <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_weight="1.5"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        >
+        <TextView android:id="@+id/tv_businessName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#434343"
+            android:textSize="15sp"
+            android:text="张莲莲"
+            />
+        <TextView android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#959595"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp"
+            android:text="2015-07-08  17:11"
+            android:layout_gravity="left"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2.0"
+        android:layout_marginRight="10dp"
+        >
+        <TextView android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="5000.00"
+            android:textColor="@color/common_color_e93030"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

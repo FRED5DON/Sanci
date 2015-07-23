@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hb_rg_m_detail_root_ly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/common_color_e93030" >
+
+        <TextView
+            android:id="@+id/hb_rg_m_detail_topbar_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/common_color_e93030"
+            android:textColor="@color/common_color_ffffff"
+            android:textSize="@dimen/common_font_20" />
+
+        <RelativeLayout
+            android:id="@+id/hb_rg_launch_back_rl"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="27dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/home_nav_icon_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="签到"
+            android:textColor="@color/common_color_ffffff"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/llj_sign_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/llj_common_qdbg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llj_sign_imageview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="今日签到可以领取3积分"
+                android:textSize="18dp" 
+                android:textColor="@color/common_color_434343" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llj_sign_imageview"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="0 天"
+                        android:layout_gravity="center"
+                        android:textColor="@color/common_color_434343"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llj_sign_imageview"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="连续签到"
+                         android:layout_gravity="center"
+                        android:textColor="#949494"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llj_sign_imageview"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="0 天"
+                        android:layout_gravity="center"
+                        android:textColor="@color/common_color_434343"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llj_sign_imageview"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="累计签到"
+                         android:layout_gravity="center"
+                        android:textColor="#949494"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llj_sign_imageview"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:textColor="@color/common_color_434343"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llj_sign_imageview"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="拥有积分"
+                         android:layout_gravity="center"
+                        android:textColor="#949494"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:text="邀请好友获得积分"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/llj_common_btn_bg"/>
+            <Button android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:text="查看签到规则"
+                android:textColor="@color/common_color_e93030"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/llj_common_unfouce_btn_bg"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

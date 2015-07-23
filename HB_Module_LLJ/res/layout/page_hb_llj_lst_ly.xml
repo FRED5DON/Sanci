@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_color_ffffff"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <com.hb_module_llj.view.subview.CommonLstSubView
+            android:id="@+id/page_llj_invate_lst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#43949494"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"
+            >
+        </com.hb_module_llj.view.subview.CommonLstSubView>
+    </LinearLayout>
+
+</LinearLayout>

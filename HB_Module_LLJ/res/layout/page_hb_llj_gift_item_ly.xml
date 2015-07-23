@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <RelativeLayout
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/gnote_img"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:background="@drawable/llj_r_bg"
+                android:scaleType="fitCenter" />
+            
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignBottom="@+id/gnote_img"
+                android:layout_alignLeft="@+id/gnote_img"
+                android:layout_alignRight="@+id/gnote_img">
+
+            <TextView
+                android:id="@+id/gnote_name"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:text="结婚"
+                android:textColor="@color/common_color_ffffff"
+                android:textSize="18sp" />
+             <TextView
+                 android:id="@+id/gnote_date"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:text="2015-07-09"
+                android:textColor="@color/common_color_ffffff"
+                android:textSize="12sp" />
+            
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
